@@ -9,5 +9,6 @@ router.get("/:id", TaskController.show);
 router.delete("/:id", TaskController.delete);
 
 router.get("/filter/all/", TaskController.all);
+router.get("/filter/favorite/", TaskController.favorite);
 
 module.exports = router;

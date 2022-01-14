@@ -7,10 +7,10 @@ const TaskSchema = new Schema({
   email: { type: String, required: false },
   company: { type: String, required: false },
   office: { type: String, required: false },
-  number: { type: Number, require: true },
+  number: { type: String, require: true },
   image: { data: Buffer, contentType: String, require: false },
   address: { type: String, require: false },
-  group: { type: Number, require: false },
+  group: { type: String, require: false },
   favorite: { type: Boolean, require: false },
   created: { type: Date, default: Date.now() },
 });
